@@ -32,6 +32,8 @@ public class StudentCollection
         StringBuilder str = new StringBuilder();
 
         for (Student student : students) {
+            if (student == null)
+                break;
             str.append(" ").append(student);
         }
 
