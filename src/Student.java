@@ -2,9 +2,9 @@ public class Student
 {
     public String name;
 
-    public int grade;
+    public double grade;
 
-    public Student(String name, int grade)
+    public Student(String name, double grade)
     {
         this.name = name;
         this.grade = grade;
