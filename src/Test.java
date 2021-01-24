@@ -5,9 +5,9 @@ public class Test
         StudentCollection students = Request.askForStudents();
 
         System.out.println(students);
-        System.out.println(students.sortByNameAscending());
-        System.out.println(students.sortByGradeAscending());
-        System.out.println(students.sortByNameDescending());
-        System.out.println(students.sortByGradeDescending());
+        System.out.println("Ascending by name " + students.sortByNameAscending());
+        System.out.println("Ascending by grade " + students.sortByGradeAscending());
+        System.out.println("Descending by name " + students.sortByNameDescending());
+        System.out.println("Descending by grade " + students.sortByGradeDescending());
     }
 }
