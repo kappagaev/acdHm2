@@ -19,7 +19,13 @@ public class Request {
     }
 
     public static StudentCollection askForStudents() {
-        Integer studentsCount = askForStudentsCount();
+        Integer studentsCount;
+        while (true) {
+            studentsCount = askForStudentsCount();
+            if(studentsCount > 0)
+                break;
+            System.out.println("Number is too low");
+        }
         StudentCollection students = new StudentCollection(studentsCount);
         for (int i = 0; i < studentsCount; i++) {
             try {
